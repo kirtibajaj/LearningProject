@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_black_18dp"
+
+        android:title="Home" />
+
+    <item
+        android:icon="@drawable/library"
+        android:id="@+id/library"
+
+        android:title="Library" />
+    <item
+        android:id="@+id/challenge"
+
+        android:title="Challenge"
+
+        android:icon="@drawable/baseline_insert_chart_black_18dp" />
+    <item
+        android:id="@+id/chatbot"
+        android:title="ChatBot"
+
+        android:icon="@drawable/baseline_question_answer_black_18dp" />
+    <item
+          android:id="@+id/profile"
+        android:title="Profile"
+
+        android:icon="@drawable/iconperson"
+/>/
+
+
+
+</menu>
