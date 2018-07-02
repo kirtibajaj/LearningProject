@@ -9,7 +9,7 @@
         android:title="Home" />
 
     <item
-        android:icon="@drawable/library"
+        android:icon="@drawable/baseline_library_books_black_18dp"
         android:id="@+id/library"
 
         android:title="Library" />
@@ -18,7 +18,7 @@
 
         android:title="Challenge"
 
-        android:icon="@drawable/baseline_insert_chart_black_18dp" />
+        android:icon="@drawable/baseline_extension_black_18dp" />
     <item
         android:id="@+id/chatbot"
         android:title="ChatBot"
@@ -29,7 +29,7 @@
         android:title="Profile"
 
         android:icon="@drawable/iconperson"
-/>/
+/>
 
 
 

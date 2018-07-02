@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
-    android:background="@color/appbar"
+    android:layout_height="120dp"
+    android:background="#808B96  "
     android:gravity="bottom"
     android:orientation="horizontal"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
@@ -12,8 +12,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:contentDescription="@string/nav_header_desc"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:id="@+id/nav_header_title"
@@ -23,9 +25,10 @@
         android:layout_marginStart="80dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_marginLeft="80dp"
-        android:fontFamily="cursive"
+        android:fontFamily="@string/title_activity_home"
         android:textSize="30dp"
-        android:textColor="#A9E3C2"/>
+        android:textColor="#FFF"
+        android:layout_marginBottom="40dp"/>
 
 
 </RelativeLayout>
