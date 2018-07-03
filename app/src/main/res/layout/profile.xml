@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E8E9EA"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <!--User Photo and user name with card view of follower and following-->
+        <LinearLayout
+            android:background="@drawable/gradient_background_profile"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+            <!--id of user image  is image_user-->
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/image_user"
+                android:src="@drawable/iconperson"/>
+            <!--id of user name is name_user-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:id="@+id/name_user"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="#B6B6B4"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--id of no of follower (follow_user)-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:id="@+id/follow_user"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follower"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="#D1D0CE"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--id of no of following(following_user)-->
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:id="@+id/following_user"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Following"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="400dp"
+       android:layout_height="110dp">
+   <android.support.v7.widget.CardView
+       android:layout_width="350dp"
+       android:layout_marginLeft="7dp"
+       android:layout_marginRight="7dp"
+       android:background="@color/colorAccent"
+       android:layout_height="350dp">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:layout_marginLeft="10dp"
+           android:orientation="horizontal">
+           <!--id of Progress bar(progressBar)-->
+
+           <ProgressBar
+           android:id="@+id/progressBar"
+           android:layout_marginTop="10dp"
+           style="?android:attr/progressBarStyleHorizontal"
+           android:layout_width="250dp"
+           android:layout_marginLeft="10dp"
+           android:layout_height="wrap_content" />
+           <!--id of % of completeness is (cmplt_progress)-->
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="0%"
+               android:id="@+id/cmplt_progress"
+               android:textStyle="bold"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="10dp"/>
+       </LinearLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="20dp"
+           android:text="profile completeness"
+           android:textColor="#000"
+           android:textSize="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="2dp"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="70dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="40dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginBottom="10dp"
+           android:weightSum="2">
+           <LinearLayout
+               android:layout_width="150dp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp">
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/accuracy"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+                   android:orientation="vertical">
+                   <!--id of accuracy percentage-->
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0%"
+                       android:id="@+id/accuracy_percentage"
+                       android:textSize="20dp"
+                       android:textColor="#000"
+                       android:textStyle="bold"
+                       android:layout_gravity="center_horizontal"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Accuracy"
+                       android:textSize="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       />
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="150dp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp">
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/attempted"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+                   android:orientation="vertical">
+                   <!--id of percentage of attempted question(percentage_attempted)-->
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0%"
+                       android:id="@+id/percentage_attempted"
+                       android:textSize="20dp"
+                       android:textColor="#000"
+                       android:textStyle="bold"
+                       android:layout_gravity="center_horizontal"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Attempted"
+                       android:textSize="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       />
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+   </android.support.v7.widget.CardView>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Account Details"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/sym_action_call" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <!--id of no of user (contact_user)-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9876543210"
+                        android:id="@+id/contact_user"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:textSize="10dp"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="change"
+                    android:id="@+id/change_phone"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+
+            </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="100dp"
+              android:orientation="horizontal">
+              <ImageView
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:src="@drawable/password_profile"
+                  android:layout_marginLeft="20dp"/>
+              <!--id of set password-->
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="change password"
+                  android:id="@+id/set_password"
+                  android:layout_marginLeft="10dp"
+                  android:textColor="@color/colorPrimaryDark"
+                  />
+          </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="350dp"
+            android:layout_height="300dp">
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

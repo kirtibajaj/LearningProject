@@ -19,6 +19,7 @@
         android:background="?android:attr/windowBackground"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
+
         app:itemIconTint="@color/drawer_menu"
         app:itemTextColor="@color/drawer_menu"
 

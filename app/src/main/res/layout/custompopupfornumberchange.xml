@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background_popup"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Enter your phone number"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        />
+    <AutoCompleteTextView
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:hint="country code"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/autoCompleteTextView"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Mobile Number"
+        android:id="@+id/newphonenumber"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#B6B6B4"
+        android:layout_marginLeft="120dp"
+        android:text="Submit"
+        android:textColor="#000"
+        android:id="@+id/submitphoneno"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+</LinearLayout>

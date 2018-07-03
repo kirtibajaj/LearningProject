@@ -35,22 +35,21 @@ public class Home extends AppCompatActivity
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                   /* case R.id.profile:
-                        setfragment();
+                    case R.id.profile:
+                        final Profile profile=new Profile();
+                        setfragment(profile);
                         return true;
-                    case R.id.library:
-                        setfragment();
+                   case R.id.library:
+
                         return true;
                     case R.id.challenge:
-                        setfragment();
                         return true;
                     case R.id.chatbot:
-                        setfragment();
                         return true;
                     case R.id.home:
-                        setfragment();
+
                         return true;
-               */ }
+                }
                 return false;
             }
         };
@@ -91,7 +90,6 @@ public class Home extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -130,11 +128,6 @@ public class Home extends AppCompatActivity
         else if (id == R.id.logout) {
 
         }
-
-
-
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
