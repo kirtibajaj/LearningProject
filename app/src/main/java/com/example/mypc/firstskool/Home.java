@@ -1,5 +1,6 @@
 package com.example.mypc.firstskool;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -106,7 +107,8 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.syllabus) {
             //HAndle Syllabus action
         } else if (id == R.id.plan) {
-
+            Intent intent=new Intent(Home.this,My_Plan_Activity.class);
+            startActivity(intent);
         } else if (id == R.id.bookmark) {
 
         }
