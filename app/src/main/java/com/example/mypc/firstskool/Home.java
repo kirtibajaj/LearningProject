@@ -105,17 +105,32 @@ public class Home extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the home action
         } else if (id == R.id.syllabus) {
-            //HAndle Syllabus action
+            //Settings activity started
+
+            Intent intent=new Intent(Home.this,Settings.class);
+            startActivity(intent);
         } else if (id == R.id.plan) {
+            //Plan activity started
+
             Intent intent=new Intent(Home.this,My_Plan_Activity.class);
             startActivity(intent);
         } else if (id == R.id.bookmark) {
+            //Bookmark activity started
 
+            Intent intent=new Intent(Home.this,Bookmark.class);
+            startActivity(intent);
         }
         else if (id == R.id.order) {
+            //My_Orders activity started
 
+            Intent intent=new Intent(Home.this,MyOrders.class);
+            startActivity(intent);
         }
         else if (id == R.id.leaderboard) {
+            //Leaderboard activity started
+
+            Intent intent=new Intent(Home.this,Leaderboard.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 
@@ -127,7 +142,10 @@ public class Home extends AppCompatActivity
 
         }
         else if (id == R.id.settings) {
+            //Settings activity started
 
+            Intent intent=new Intent(Home.this,Settings.class);
+            startActivity(intent);
         }
         else if (id == R.id.logout) {
 
