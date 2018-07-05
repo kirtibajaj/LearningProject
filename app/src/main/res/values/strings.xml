@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">FirstSkool</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Register</string>
+
+    <string name="slide_1_title">FirstSkool</string>
+    <string name="slide_1_desc">We Build Awesomeness</string>
+
+    <string name="slide_2_title">Watch Video Lessons</string>
+    <string name="slide_2_desc">1000+ hours of engaging videos covering all concepts</string>
+
+    <string name="slide_3_title">Personalized Learning</string>
+    <string name="slide_3_desc">Adaptive paths to serve each students learning needs</string>
+
+    <string name="slide_4_title">Test and Analyze</string>
+    <string name="slide_4_desc">Unlimited practice questions and test with deep analysis</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
 </resources>
