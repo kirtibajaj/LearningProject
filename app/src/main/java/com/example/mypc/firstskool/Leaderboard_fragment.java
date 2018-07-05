@@ -53,7 +53,12 @@ public class Leaderboard_fragment extends Fragment {
 
         Toast.makeText(getContext(),"IN the fragment",Toast.LENGTH_LONG).show();
 
-        adapter=new Leaderboard_list_adapter(list,getContext());
+        adapter=new Leaderboard_list_adapter(list, getContext(), new Leaderboard_list_adapter.LeaderboardItemListner() {
+            @Override
+            public void onItemClick(int position) {
+
+            }
+        });
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, LinearLayoutManager.VERTICAL));
