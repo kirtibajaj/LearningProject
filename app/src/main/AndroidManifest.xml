@@ -27,9 +27,13 @@
         <activity android:name=".MyOrders" />
         <activity
             android:name=".Leaderboard"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Settings" />
-        <activity android:name=".My_Syllabus"></activity>
+        <activity android:name=".My_Syllabus" />
+        <activity
+            android:name=".Edit_Personal_Details"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

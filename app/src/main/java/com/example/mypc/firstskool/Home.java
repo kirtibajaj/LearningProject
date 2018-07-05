@@ -36,6 +36,10 @@ public class Home extends AppCompatActivity
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
+                    case R.id.home:
+                        final Home_fragment home_fragment=new Home_fragment();
+                        setfragment(home_fragment);
+                        return true;
                     case R.id.profile:
                         final Profile profile=new Profile();
                         setfragment(profile);
@@ -47,9 +51,7 @@ public class Home extends AppCompatActivity
                         return true;
                     case R.id.chatbot:
                         return true;
-                    case R.id.home:
 
-                        return true;
                 }
                 return false;
             }

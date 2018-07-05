@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.708" />
-
+    <!--app:srcCompat="@drawable/add_icon"-->
     <ImageView
         android:id="@+id/add"
         android:layout_width="30dp"
@@ -71,7 +71,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/add_icon" />
+
+    />
+    <!--app:srcCompat="@drawable/accept_icon"-->
 
     <ImageView
         android:id="@+id/added"
@@ -85,6 +87,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/accept_icon" />
+        />
 
 </android.support.constraint.ConstraintLayout>

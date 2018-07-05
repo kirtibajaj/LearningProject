@@ -5,7 +5,6 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/baseline_home_black_18dp"
-
         android:title="Home" />
 
     <item

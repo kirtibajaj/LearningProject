@@ -39,9 +39,11 @@
                 android:layout_gravity="center_horizontal"/>
         </LinearLayout>
         <android.support.v7.widget.CardView
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="120dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:layout_height="60dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -109,48 +111,50 @@
     </RelativeLayout>
    <RelativeLayout
        android:layout_width="match_parent"
-       android:layout_height="110dp">
+       android:layout_height="120dp">
    <android.support.v7.widget.CardView
        android:layout_width="match_parent"
        android:foregroundGravity="center_horizontal"
-       android:layout_marginLeft="12dp"
-       android:layout_marginRight="10dp"
-       android:background="@color/colorAccent"
-       android:layout_height="350dp">
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:layout_height="match_parent">
        <LinearLayout
-           android:layout_width="wrap_content"
-           android:layout_height="40dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
            android:layout_marginLeft="10dp"
            android:orientation="horizontal">
            <!--id of Progress bar(progressBar)-->
 
            <ProgressBar
            android:id="@+id/progressBar"
-           android:layout_marginTop="10dp"
+           android:layout_marginTop="24dp"
            style="?android:attr/progressBarStyleHorizontal"
            android:layout_width="wrap_content"
                android:minWidth="250dp"
+               android:layout_marginRight="30dp"
            android:layout_marginLeft="10dp"
            android:layout_height="wrap_content" />
            <!--id of % of completeness is (cmplt_progress)-->
 
            <TextView
-               android:layout_width="wrap_content"
+               android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:text="0%"
                android:id="@+id/cmplt_progress"
                android:textStyle="bold"
-               android:layout_marginLeft="15dp"
-               android:layout_marginTop="10dp"/>
+               android:textAlignment="viewEnd"
+               android:gravity="end"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="24dp"/>
        </LinearLayout>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="20dp"
            android:text="profile completeness"
            android:textColor="#000"
-           android:textSize="10dp"
+           android:textSize="15dp"
            android:layout_marginLeft="20dp"
-           android:layout_marginTop="2dp"/>
+           android:layout_marginTop="4dp"/>
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="70dp"
@@ -160,14 +164,14 @@
            android:layout_marginBottom="10dp"
            android:weightSum="2">
            <LinearLayout
-               android:layout_width="150dp"
+               android:layout_width="match_parent"
                android:layout_weight="1"
                android:layout_height="match_parent"
                android:orientation="horizontal">
                <LinearLayout
                    android:layout_width="wrap_content"
                    android:layout_height="50dp"
-                   android:layout_marginLeft="20dp"
+                   android:layout_marginLeft="10dp"
                    android:layout_marginTop="10dp">
                    <ImageView
                        android:layout_width="40dp"
@@ -206,14 +210,14 @@
            </LinearLayout>
 
            <LinearLayout
-               android:layout_width="150dp"
+               android:layout_width="match_parent"
                android:layout_weight="1"
                android:layout_height="match_parent"
                android:orientation="horizontal">
                <LinearLayout
                    android:layout_width="wrap_content"
                    android:layout_height="50dp"
-                   android:layout_marginLeft="20dp"
+                   android:layout_marginLeft="10dp"
                    android:layout_marginTop="10dp">
                    <ImageView
                        android:layout_width="40dp"
@@ -261,8 +265,8 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp">
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -287,12 +291,12 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@android:drawable/sym_action_call" />
+                        android:src="@drawable/phone" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="25dp"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
                     <!--id of no of user (contact_user)-->
@@ -316,15 +320,18 @@
                         />
                 </LinearLayout>
                 <TextView
+
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_marginTop="15dp"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="10dp"
                     android:text="change"
+                    android:textAlignment="viewEnd"
                     android:id="@+id/change_phone"
+
                     android:textColor="@color/colorPrimaryDark"
 
-                    />
+                    android:gravity="end" />
 
             </LinearLayout>
 
@@ -340,11 +347,13 @@
                   android:layout_marginLeft="20dp"/>
               <!--id of set password-->
               <TextView
+
+                  android:onClick="ShowPopup_password"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:text="change password"
                   android:id="@+id/set_password"
-                  android:layout_marginLeft="10dp"
+                  android:layout_marginLeft="20dp"
                   android:textColor="@color/colorPrimaryDark"
                   />
           </LinearLayout>
@@ -352,13 +361,147 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="500dp">
         <android.support.v7.widget.CardView
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_width="350dp"
-            android:layout_height="300dp">
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Personal Details"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                />
+                <!-- android:onClick="edittopersonaldetail"-->
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Edit"
+
+                    android:id="@+id/edit_change_tonext_activity"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="viewEnd"
+                    android:gravity="end"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/profile_name"
+                        android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="MY NAME"
+                            android:id="@+id/user_name_in_personaldetails"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:textSize="20dp"
+                            android:textColor="#000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/mail"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="MAil ID"
+                        android:id="@+id/mail_id_in_personal_details"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20dp"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/iconperson"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/gender_in_personal_details"
+                        android:text="Gender"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/location"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Location"
+                        android:id="@+id/loaction_in_personal_details"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/birthday"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Birthday"
+                        android:id="@+id/birthdate_in_personal_details"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
     </RelativeLayout>

@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Good Morning"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="cursive"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Hello ! Username"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="cursive"
+        android:textColor="#000"
+        />
+        <GridView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:id="@+id/subject_classification"
+            android:columnWidth="100dp"
+            android:numColumns="1"
+            android:padding="16dp"/>
+    </LinearLayout>
+
 
 </LinearLayout>
