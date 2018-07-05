@@ -9,24 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
 
-        <activity
-            android:name=".Home"
-            android:label="firstSkool"
-
-            android:theme="@style/AppTheme.NoActionBar">
-=======
         <activity android:name=".HomeActivity">
-
-        </activity>
-        <activity android:name=".SplashActivity">
->>>>>>> b9d998b4ec81fb1a27d509caef8c7f7d17d12305
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity">
+
+
         </activity>
     </application>
 
