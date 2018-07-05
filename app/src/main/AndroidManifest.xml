@@ -24,7 +24,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Bookmark" />
         <activity android:name=".MyOrders" />
-        <activity android:name=".Leaderboard" />
+        <activity
+            android:name=".Leaderboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Settings" />
         <activity android:name=".My_Syllabus"></activity>
     </application>
