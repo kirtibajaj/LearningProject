@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mypc.firstskool.Notification">
+    tools:context="com.example.mypc.firstskool.Mycart">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/no_notifications"
+        android:text="@string/cart"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
