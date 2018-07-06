@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <EditText
+    <LinearLayout
+        android:id="@+id/prof_section"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <ImageView
+            android:id="@+id/imgViewPhoto"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconperson"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:id="@+id/txtuserName"
+                android:text="NAme Displayed here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtUserEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email id "/>
+            <Button
+                android:id="@+id/btn_logout"
+                android:text="Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+    </com.google.android.gms.common.SignInButton>
+</LinearLayout>
