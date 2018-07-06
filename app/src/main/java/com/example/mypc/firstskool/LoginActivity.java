@@ -44,6 +44,8 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+
+
     private void showLoginDialog() {
 
         final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
