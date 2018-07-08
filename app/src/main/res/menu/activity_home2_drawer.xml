@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:ignore="MenuTitle">
+    <item
+        android:title="Home"
+        android:id="@+id/nav_home"
+        android:drawableRight="@drawable/baseline_keyboard_arrow_right_black_18dp"
+        android:icon="@drawable/baseline_account_balance_black_18dp"
+        />
+    <group android:checkableBehavior="single">
+        <item android:title="Account">
+            <menu>
+
+        <item
+            android:id="@+id/syllabus"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_black_18dp"
+            android:icon="@drawable/syllabus"
+            android:title="My Syllabus" />
+        <item
+            android:id="@+id/plan"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_black_18dp"
+            android:icon="@drawable/courses"
+            android:title="My Plan" />
+                <item
+                    android:id="@+id/bookmark"
+                    android:drawableRight="@drawable/baseline_keyboard_arrow_right_black_18dp"
+                    android:icon="@drawable/bookmark"
+                    android:title="Bookmark" />
+        <item
+            android:id="@+id/order"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_black_18dp"
+            android:icon="@drawable/order"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/leaderboard"
+
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_black_18dp"
+            android:icon="@drawable/baseline_insert_chart_black_18dp"
+            android:title="Leaderboard" />
+            </menu>
+        </item>
+    </group>
+<group>
+    <item android:icon="@drawable/baseline_settings_black_18dp"
+        android:id="@+id/settings"
+        android:title="Settings"/>
+    <item android:icon="@drawable/baseline_settings_power_black_18dp"
+        android:id="@+id/logout"
+        android:title="LogOut"/>
+
+    </group>
+        <item android:title="Communicate">
+           <menu>
+               <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+                <item
+                android:id="@+id/rateus"
+                android:icon="@drawable/baseline_star_black_18dp"
+                android:title="Rate us" />
+                <item
+                android:id="@+id/likeus"
+                android:icon="@drawable/baseline_thumb_up_alt_black_18dp"
+                android:title="Like Us"
+                />
+        </menu>
+    </item>
+
+
+</menu>

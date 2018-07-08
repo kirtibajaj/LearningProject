@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FirstSkool</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">UserName</string>
+    <string name="nav_header_subtitle">emailiduser@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="notification">Notification</string>
+    <string name="cart">Cart!</string>
+    <string name="no_notifications">No notifications!</string>
+    <string name="my_cart">My Cart</string>
+    <string name="default_message">Type a message</string>
+</resources>

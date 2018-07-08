@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appbar">#A9CCE3</color>
+    <color name="drawer_menu">#A9E3C2</color>
+    <color name="drawer_background">#E3F2F6</color>
+</resources>
