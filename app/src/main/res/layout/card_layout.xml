@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#ffffff"
+    android:elevation="15dp"
+    card_view:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cart_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff7373"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Art Design"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/cart_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_title"
+            android:text="Rs. 999"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/cart_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra 10% off"
+            android:textColor="#366501"
+            android:layout_below="@+id/cart_amount"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/cart_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 months"
+            android:layout_below="@id/cart_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:id="@+id/cart_buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_discount"
+            android:layout_centerHorizontal="true"
+            android:text="BUY NOW"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/cart_buy_now_background"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:paddingRight="45dp"
+            android:paddingLeft="45dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
