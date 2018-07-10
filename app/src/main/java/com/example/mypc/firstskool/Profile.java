@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Profile extends Fragment {
     Dialog dialog_phone,dialog_pass;
@@ -43,14 +44,32 @@ public class Profile extends Fragment {
         //configuring id of percentage of change contact no
         TextView change_contact=(TextView)rootView.findViewById(R.id.change_phone);
         //configuring id of percentage of change password
-        TextView change_password=(TextView) rootView.findViewById(R.id.set_password);
-         dialog_phone=new Dialog(getActivity());
+        change_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShowPopup_phone(v);
+            }
+        });
         dialog_pass=new Dialog(getActivity());
+        TextView change_password=(TextView) rootView.findViewById(R.id.set_password);
+        dialog_phone=new Dialog(getActivity());
+        change_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShowPopup_password(v);
+            }
+        });
 
         //configuring id of Edit personal details
         TextView Edit_personal=(TextView)rootView.findViewById(R.id.edit_change_tonext_activity);
-      Intent intent=new Intent(getActivity(),Edit_Personal_Details.class);
-        startActivity(intent);
+        Edit_personal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),Edit_Personal_Details.class);
+                startActivity(intent);
+            }
+        });
+
         //configuring id of username in personal details
         TextView username_personal_details=(TextView)rootView.findViewById(R.id.user_name_in_personaldetails);
         //configuring id of emailid inpersonal details
@@ -65,16 +84,18 @@ public class Profile extends Fragment {
     }
     public void ShowPopup_phone(View v){
         dialog_phone.setContentView(R.layout.custompopupfornumberchange);
+        dialog_phone.show();
         //configuring id of autocomplete of country code
         AutoCompleteTextView country_code=(AutoCompleteTextView)v.findViewById(R.id.autoCompleteTextView);
         //configuring id of new phone number
         EditText change_phone=(EditText)v.findViewById(R.id.newphonenumber);
         //configuring id of submit buttonin pop up
-        TextView submit=(TextView)v.findViewById(R.id.submitphoneno);
 
+        TextView submit=(TextView)v.findViewById(R.id.submitphoneno);
     }
     public void ShowPopup_password(View v){
         dialog_pass.setContentView(R.layout.custompopupforpasswordchange);
+        dialog_pass.show();
         //configuring id of old password
         AutoCompleteTextView op=(AutoCompleteTextView)v.findViewById(R.id.oldpassword);
         //configuring id of new password

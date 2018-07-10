@@ -4,7 +4,6 @@
     android:layout_width="300dp"
     android:layout_height="250dp"
     android:orientation="vertical"
-    android:background="@drawable/gradient_background_popup"
     android:layout_gravity="center"
     android:padding="30dp"
     >
