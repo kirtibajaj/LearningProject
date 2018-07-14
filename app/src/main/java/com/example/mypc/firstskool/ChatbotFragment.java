@@ -9,9 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
-/**
- * Created by CSC on 7/6/2018.
- */
 
 public class ChatbotFragment extends Fragment {
 
