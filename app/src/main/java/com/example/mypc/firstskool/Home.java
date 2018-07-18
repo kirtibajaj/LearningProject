@@ -42,10 +42,12 @@ public class Home extends AppCompatActivity
                         //setfragment();
                         return true;
                     case R.id.library:
-                        //setfragment();
+                        LibraryFragment libraryFragment=new LibraryFragment();
+                        setfragment(libraryFragment);
                         return true;
                     case R.id.challenge:
-                        //setfragment();
+                        ChallengeFragment challengeFragment=new ChallengeFragment();
+                        setfragment(challengeFragment);
                         return true;
                     case R.id.chatbot:
                         ChatbotFragment chatbotFragment=new ChatbotFragment();

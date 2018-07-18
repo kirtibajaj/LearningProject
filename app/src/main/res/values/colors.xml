@@ -6,4 +6,6 @@
     <color name="appbar">#A9CCE3</color>
     <color name="drawer_menu">#A9E3C2</color>
     <color name="drawer_background">#E3F2F6</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#E0E0E0</color>
 </resources>

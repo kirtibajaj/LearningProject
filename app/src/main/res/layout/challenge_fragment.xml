@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#73a9c2">
 
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/challenge_icon"
+        android:src="@drawable/trophy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challenge_icon"
+        android:layout_centerHorizontal="true"
+        android:text="Take up challenge and be a better learner."
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:text="Choose Subject"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textView3" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/challenge_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="15dp">
+
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
