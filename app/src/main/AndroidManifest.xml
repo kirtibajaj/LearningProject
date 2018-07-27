@@ -19,10 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Notification" android:parentActivityName=".Home" android:label="@string/notification"/>
-        <activity android:name=".Mycart" android:parentActivityName=".Home" android:label="@string/my_cart"/>
-
-
+        <activity
+            android:name=".Notification"
+            android:label="@string/notification"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Mycart"
+            android:label="@string/my_cart"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".ChallengeFragmentSubject"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".LibraryFragmentSubject"></activity>
     </application>
 
 </manifest>

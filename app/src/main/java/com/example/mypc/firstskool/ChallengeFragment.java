@@ -1,6 +1,7 @@
 package com.example.mypc.firstskool;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -17,8 +18,15 @@ import android.view.ViewGroup;
 public class ChallengeFragment extends Fragment{
 
     RecyclerView mChallengeRecyclerView;
-    Context context=getActivity();
+    Context context;
     String[] Subjects={"Physics","Biology","Maths","Chemistry","Social Science","Logical Reasoning"};
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        this.context=context;
+    }
 
     @Nullable
     @Override
@@ -34,6 +42,9 @@ public class ChallengeFragment extends Fragment{
         Log.d("ChallengeFragment","rottview");
         return rootView;
     }
+
+
+
 
     @Override
     public void onResume() {
